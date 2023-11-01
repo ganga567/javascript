@@ -1,0 +1,12 @@
+// program to convert date to number
+// create date
+const d1 = new Date();
+console.log(d1);
+
+// converting to number
+const result = d1.getTime();
+console.log(result);
+const d2 = new Date();
+console.log(d1); // Mon Nov 09 2020 10:52:32 GMT+0545 (Asia Time)
+const d3 = new Date().getTime();
+console.log(d1); // 1604898452084
