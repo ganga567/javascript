@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<title> 
+		JavaScript RegExp Reference 
+	</title> 
+</head> 
+
+<body style="text-align:center"> 
+	<h1 style="color:green"> 
+		GeeksforGeeks 
+	</h1> 
+	<h2>RegExp . Metacharacter</h2> 
+	<p> 
+		Input String: ABC, A3C, A C, AXXCC! 
+	</p> 
+	<button onclick="geek()"> 
+		Click it! 
+	</button> 
+	<p id="app"></p> 
+	<script> 
+		function geek() { 
+			let str1 = "ABC, A3C, A C, AXXCC!"; 
+			let regex4 = /A.C/g; 
+			let match4 = str1.match(regex4); 
+
+			document.getElementById("app").innerHTML = 
+				"Found " + match4.length 
+				+ " matches: " + match4; 
+		} 
+	</script> 
+</body>
