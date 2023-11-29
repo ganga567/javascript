@@ -1,0 +1,23 @@
+function asyncFunction() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const randomNumber = Math.random();
+      if (randomNumber > 0.5) {
+        resolve(randomNumber);
+      } else {
+        reject("Error: Random number is too small");
+      }
+    }, 1000);
+  });
+}
+
+async function executeAsyncFunction() {
+  try {
+    const result = await asyncFunction();
+    console.log("Async operation successful:", result);
+  } catch (error) {
+    console.error("Async operation failed:", error);
+  }
+}
+
+executeAsyncFunction();
