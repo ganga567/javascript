@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PAGE</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <style>
+        .signin {
+            display: none;
+        }
+    </style>
+</head>
+<center>
+<body>
+        <div id="heading">
+        <b><H1>WELCOME TO ADMIN PORTAL</H1></b>
+    </div>
+    <div class="main">
+        <form>
+        <div class="navigate">
+            <button class="signbtn" id="signinbutton" onclick="changepage()">SIGN IN</button>
+            <button class="signbtn" id="signUpbutton" onclick="changepageup()">REGISTER</button>
+        </div>
+        <DIV></DIV>
+        <div class="container" id="signup-page">
+            <h1> SIGN UP HERE</h1>
+            <label for=""> ENTER USERNAME</label>
+            <input type="text" placeholder="User Name*" required><br>
+            <div></div>
+            <label for="">ENTER FIRSTNAME</label>
+            <input type="text" placeholder="First Name*" required><br>
+            <div></div>
+            <label for="">ENTER MIDDLENAME</label>
+            <input type="text" placeholder="Middle Name*"><br>
+            <div></div>
+            <label for="">ENTER LASTNAME</label>
+            <input type="text" placeholder="Last Name*" required><br>
+            <div></div>
+            <label for=""> ENTER EMAILID</label>
+            <input type="email" placeholder="EMAILID*" required><br>
+            <div></div>
+            <label for="">ENTER PHONENUMBER</label>
+            <input type="number" placeholder="Phone Number*" required><br>
+            <div></div>
+            <br>
+            <label for="">ENTER DOB</label>
+            <input type="date" placeholder="Date Of Birth*" required><br>
+            <div></div>
+            <label for="">CHOOSE COUNTRY</label>
+            <select id="countries_list*"  onchange="changeValue(this)">
+                
+                <option value="select" selected>select</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Egypt">Egypt</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran (Islamic Republic of)</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Italy">Italy</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mexico">Mexico</optiON>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Netherlands Antilles">Netherlands Antilles</option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Pitcairn">Pitcairn</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russian Federation</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Georgia">South Georgia and the South Sandwich Islands</option>
+                <option value="Span">Spain</option>
+                <option value="SriLanka">Sri Lanka</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                <option value="Vietnam">VietNam</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+            <div></div>
+            <label for="">ENTER STATENAME</label>
+            <input type="text" placeholder="Statename*" required><br>
+            <div></div>
+            <label for="">ENTER DISTRICTNAME</label>
+            <input type="text" placeholder="Districtname*"><br>
+            <div></div>
+            <label for="">CREATE PASSWORD</label>
+            <input type="password" placeholder="PASSWORD" required><br>
+            <div></div>
+            <label for="">RE-ENTER PASSWORD</label>
+            <input type="password" placeholder="PASSWORD" required><br>
+            <div></div>
+            <input class="terms"  type="checkbox" required>Accept Terms and conditions*
+            <button class="signbtn">SUBMIT</button>
+
+        </div>
+        <div class="popup" id="signup-success-popup">
+            <p>Signup successful! Thank you.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+    </div>
+        
+        <div class="signin" id="signin-page">
+            <div class="container">
+                <h1> SIGN IN</h1>
+                <label for=""> USER NAME</label>
+                <input type="text" placeholder="User Name"><br>
+                <label for="">PASSWORD</label>
+                <input type="password" placeholder="PASSWORD"><br>
+                <button class="signbtn">SUBMIT</button>
+
+            </div>
+           
+        </div>
+    </div>
+</form>
+</body>
+</center>
+</html>
